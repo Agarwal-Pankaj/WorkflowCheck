@@ -35,9 +35,8 @@ jobs:
         run: ls
       
       - name: Run generate files
-        # run: $GITHUB_WORKSPACE/backend/core/bin/generate-computed-configs.sh
-        
-        run: yarn generate-file
+        uses: $GITHUB_WORKSPACE/generate.sh
+        # run: yarn generate-file
         
 
       # This step will evaluate the repo status and report the change
