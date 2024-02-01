@@ -31,13 +31,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}``
         run: $GITHUB_WORKSPACE/generate.sh
-        # run: yarn generate-file
-        
-      - name: Check for uncommitted changes
-        id: check-changes
-        uses: mskri/check-uncommitted-changes-action@v1.0.1
 
-      - name: Evaluate if there are changes
-        if: steps.check-changes.outputs.outcome == failure()
-        run: echo steps.check-changes.outputs.changes
 
