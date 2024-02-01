@@ -43,3 +43,7 @@ jobs:
       - name: Process changes
         if: steps.changes.outputs.changed == 1
         run: echo "Changes exist"
+
+      - name: Process changes
+        if: steps.changes.outputs.changed == 0
+        run: echo "Changes not exist"
