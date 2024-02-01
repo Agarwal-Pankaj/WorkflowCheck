@@ -23,10 +23,8 @@ jobs:
           node-version: 18.17.1
 
       - name: Setup Typescript environment
-        uses: actions/typescript-action
-        with:
-          node-version: 18.17.1
-
+        run: yarn add typescript 
+        
       - name: CheckoutRepo
         uses: actions/checkout@v2 
 
