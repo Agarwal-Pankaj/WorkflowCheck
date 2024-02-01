@@ -7,7 +7,7 @@ on:
       - main
     paths:
       [
-        '/config/*',
+        '/config/',
       ]
     types: [opened, reopened, synchronize]
 
