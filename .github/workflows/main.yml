@@ -35,7 +35,7 @@ jobs:
         run: ls
       
       - name: Run generate files
-        uses: $GITHUB_WORKSPACE/generate.sh
+        uses: generate.sh
         # run: yarn generate-file
         
 
@@ -43,6 +43,8 @@ jobs:
       - name: Check if there are changes
         id: changes
         uses: UnicornGlobal/has-changes-action@v1.0.11
+
+
       # You can now access a variable indicating if there have been changes
       - name: Process changes
         if: steps.changes.outputs.changed == 1
