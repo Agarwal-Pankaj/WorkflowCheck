@@ -1,2 +1,2 @@
 #!/bin/sh
-ts-node generate.ts
+npx ts-node generate.ts
