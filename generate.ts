@@ -1,3 +1,3 @@
 import fs from 'fs';
 
-fs.writeFileSync('Sample.json5', 'two');
+fs.writeFileSync('config/Sample.json5', 'two');
