@@ -16,6 +16,11 @@ jobs:
       - name: Install yarn
         run: yarn install
 
+      - name: Setup Typescript environment
+        uses: actions/typescript-action
+        with:
+          node-version: 18.17.1
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
         with:
