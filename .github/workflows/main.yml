@@ -39,4 +39,5 @@ jobs:
 
       - name: Evaluate if there are changes
         if: steps.check-changes.outputs.outcome == failure()
-        run: echo "There are uncommitted changes"
+        run: echo steps.check-changes.outputs.changes
+
