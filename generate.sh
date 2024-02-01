@@ -1,2 +1,2 @@
 #!/bin/sh
-node -r generate.ts
+ts-node generate.ts
