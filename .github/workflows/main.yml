@@ -16,7 +16,6 @@ jobs:
       - name: Install yarn
         run: yarn install
 
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
         with:
@@ -27,18 +26,11 @@ jobs:
         
       - name: CheckoutRepo
         uses: actions/checkout@v2 
-
-      - name: pwd
-        run: pwd
-      
-      - name: ls
-        run: ls
       
       - name: Run generate files
         uses: generate.sh
         # run: yarn generate-file
         
-
       # This step will evaluate the repo status and report the change
       - name: Check if there are changes
         id: changes
