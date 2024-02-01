@@ -24,9 +24,9 @@ jobs:
       - name: CheckoutRepo
         uses: actions/checkout@v2 
 
-      - name: Run generate computed files
+      - name: Run generate files
         # run: $GITHUB_WORKSPACE/backend/core/bin/generate-computed-configs.sh
-        run: yarn generate
+        run: yarn generate-file
         working-directory: '/'
 
       # This step will evaluate the repo status and report the change
