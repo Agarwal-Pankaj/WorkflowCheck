@@ -23,7 +23,7 @@ jobs:
           node-version: 18.17.1
 
       - name: Setup Typescript environment
-        run: yarn add ts-node 
+        run: npm install ts-node 
         
       - name: CheckoutRepo
         uses: actions/checkout@v2 
