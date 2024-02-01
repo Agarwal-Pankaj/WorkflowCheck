@@ -17,10 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.1
-        with:
-          node-version: 18.17.1
+
         
       - name: CheckoutRepo
         uses: actions/checkout@v2 
