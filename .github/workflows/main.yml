@@ -5,7 +5,10 @@ on:
   pull_request:
     branches:
       - main
-    
+    paths:
+      [
+        '/config/*',
+      ]
     types: [opened, reopened, synchronize]
 
 jobs:
