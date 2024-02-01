@@ -9,7 +9,7 @@ on:
 
 jobs:
   configcheck:
-    name: Checking computed config files
+    name: Checking files
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,15 @@ jobs:
       - name: CheckoutRepo
         uses: actions/checkout@v2 
 
+      - name: pwd
+        run: pwd
+      
+      - name: ls
+        run: ls
+      
       - name: Run generate files
         # run: $GITHUB_WORKSPACE/backend/core/bin/generate-computed-configs.sh
+        
         run: yarn generate-file
         
 
