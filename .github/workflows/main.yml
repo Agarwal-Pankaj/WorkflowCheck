@@ -28,7 +28,9 @@ jobs:
         uses: actions/checkout@v2 
       
       - name: Run generate files
-        run: generate.sh
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}``
+        run: $GITHUB_WORKSPACE/generate.sh
         # run: yarn generate-file
         
       # This step will evaluate the repo status and report the change
