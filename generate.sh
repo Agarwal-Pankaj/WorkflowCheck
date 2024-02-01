@@ -1,6 +1,6 @@
 #!/bin/sh
 
-
+npm install ts-node
 npx ts-node generate.ts
 
 
