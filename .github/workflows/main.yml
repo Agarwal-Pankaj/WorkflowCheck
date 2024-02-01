@@ -16,15 +16,13 @@ jobs:
     name: Checking files
     runs-on: ubuntu-latest
 
-    steps:
-
-        
+    steps: 
       - name: CheckoutRepo
         uses: actions/checkout@v2 
       
       - name: Generate and check computed configs
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}``
+        # env:
+        #   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}``
         run: $GITHUB_WORKSPACE/generate.sh
 
 
