@@ -1,4 +1,4 @@
-name: Check compited config
+name: Check Changes
 
 on:
   pull_request:
