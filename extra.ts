@@ -1,3 +1,3 @@
-class ab {
+class abd {
 
 }
