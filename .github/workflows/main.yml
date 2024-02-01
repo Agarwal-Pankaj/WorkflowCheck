@@ -7,7 +7,7 @@ on:
       - main
     paths:
       [
-        '/config/',
+        '**.json5',
       ]
     types: [opened, reopened, synchronize]
 
