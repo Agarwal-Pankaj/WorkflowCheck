@@ -17,16 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install yarn
-        run: yarn install
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
         with:
           node-version: 18.17.1
-
-      - name: Setup Typescript environment
-        run: npm install ts-node 
         
       - name: CheckoutRepo
         uses: actions/checkout@v2 
