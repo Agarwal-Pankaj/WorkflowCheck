@@ -20,6 +20,11 @@ jobs:
       - name: CheckoutRepo
         uses: actions/checkout@v2 
 
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: 18.17.1
+
       
       - name: Generate and check computed configs
         run: $GITHUB_WORKSPACE/bin/generate.sh
