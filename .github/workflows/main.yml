@@ -27,6 +27,6 @@ jobs:
 
       
       - name: Generate and check computed configs
-        run: $GITHUB_WORKSPACE/core/bin/generate.sh
+        run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh
 
 
