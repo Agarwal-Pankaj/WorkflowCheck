@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-npx ts-node generate.ts
+npx ts-node ../script/generate.ts
 
 status=$(git status --porcelain)
 if [ -n "$status" ]; then

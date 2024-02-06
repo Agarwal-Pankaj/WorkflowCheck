@@ -26,6 +26,6 @@ jobs:
           node-version: 18.17.1
       
       - name: Generate and check computed configs
-        run: $GITHUB_WORKSPACE/generate.sh
+        run: $GITHUB_WORKSPACE/bin/generate.sh
 
 
