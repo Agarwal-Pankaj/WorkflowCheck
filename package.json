@@ -5,10 +5,8 @@
   "repository": "git@github.com:Agarwal-Pankaj/WorkflowCheck.git",
   "author": "Pankaj Agarwal <a.pankaj@1982@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "generate-file": "ts-node ./generate.ts"
-  },
+
   "devDependencies": {
-    "ts-node": "^10.9.2"
+   
   }
 }
