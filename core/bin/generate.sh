@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-npx ts-node ../script/generate.ts
+npx ts-node ./core/script/generate.ts
 
 if [ $? -eq 1 ]; then
     exit 1
