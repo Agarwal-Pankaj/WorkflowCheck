@@ -9,6 +9,7 @@
     "@types/node": "^20.11.16"
   },
   "scripts": {
+    "build": "yarn run -T tsc -b",
     "generate-configs": "ts-node ./script/generate.ts"
   }
 }
