@@ -6,6 +6,9 @@
       "WorkflowCheck/*"
     ]
   },
+  "scripts": {
+    "build": "yarn run -T tsc -b"
+  },
   "dependencies": {
     "@types/lodash": "^4.14.168",
     "lodash": "^4.17.21",
