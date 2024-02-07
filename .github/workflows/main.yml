@@ -30,3 +30,21 @@ jobs:
         run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh
 
 
+      - name: Generate and check  configs
+        run: yarn workspace @WorkflowCheck run generate
+
+      - name: Check Status
+        run: |
+          if [ $? -eq 1 ]; then
+            exit 1
+          else
+            status=$(git status --porcelain)
+            if [ -n "$status" ]; then
+              echo "Following config files have mismatched changes in PR. Please generate"
+              echo "$status"
+              exit 1
+            else
+              echo "Cconfig files are up to date."
+              exit 0
+            fi
+          fi
