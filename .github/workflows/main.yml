@@ -26,7 +26,7 @@ jobs:
           node-version: 18.17.1
 
       - name: Setup ts-ode
-        run: npm install ts-node 
+        run: npm install -g ts-node
 
       - name: Generate and check computed configs
         run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh
