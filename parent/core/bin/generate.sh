@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-yarn ts-node ./parent/core/script/generate.ts
+ts-node ./parent/core/script/generate.ts
 
 if [ $? -eq 1 ]; then
     exit 1
