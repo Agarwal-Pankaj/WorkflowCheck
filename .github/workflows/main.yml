@@ -31,7 +31,7 @@ jobs:
 
 
       - name: Generate and check  configs
-        run: yarn workspace @WorkflowCheck run generate
+        run: yarn workspace @WorkflowCheck/ok run generate
 
       - name: Check Status
         run: |

@@ -1,9 +1,9 @@
 {
-  "name": "test",
+  "name": "myworkspace",
   "private": true,
   "workspaces": {
     "packages": [
-      "@WorkflowCheck"
+      "WorkflowCheck/*"
     ]
   },
   "dependencies": {
