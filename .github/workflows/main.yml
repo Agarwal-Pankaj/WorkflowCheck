@@ -4,10 +4,10 @@ on:
   workflow_dispatch: {}
   pull_request:
     branches:
-      - develop
+      - main
     paths:
       [
-        '/config/*',
+        '**.json5',
       ]
     types: [opened, reopened, synchronize]
 
@@ -16,24 +16,31 @@ jobs:
     name: Checking files
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Install yarn
-        run: yarn install
+    steps: 
+      - name: CheckoutRepo
+        uses: actions/checkout@v2 
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v3.5.1
         with:
           node-version: 18.17.1
 
-      - name: Setup Typescript environment
-        run: npm install ts-node 
-        
-      - name: CheckoutRepo
-        uses: actions/checkout@v2 
-      
-      - name: Run generate files
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}``
-        run: $GITHUB_WORKSPACE/generate.sh
 
+      - name: Generate and check  configs
+        run: yarn workspace @parent/core run generate
 
+      - name: Check Status
+        run: |
+          if [ $? -eq 1 ]; then
+            exit 1
+          else
+            status=$(git status --porcelain)
+            if [ -n "$status" ]; then
+              echo "Following config files have mismatched changes in PR. Please generate"
+              echo "$status"
+              exit 1
+            else
+              echo "Cconfig files are up to date."
+              exit 0
+            fi
+          fi

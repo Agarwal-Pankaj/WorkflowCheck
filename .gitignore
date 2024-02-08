@@ -9,6 +9,24 @@ dist/
 .DS_Store
 Thumbs.db
 
+# Yarn
+**/.yarn/*
+!**/.yarn/cache
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+yarn-error.log
+# Only workspace root lock files should exist
+*/**/yarn.lock
+# Github apps cloud functions have their own lock
+!github-apps/**/yarn.lock
+# Allow test fixtures lock files for upgradr
+!tools/upgradr/**/yarn.lock
+
+
+
 node_modules/
 
 package-lock.json
