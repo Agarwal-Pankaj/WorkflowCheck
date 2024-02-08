@@ -27,7 +27,7 @@ jobs:
 
 
       - name: Generate and check  configs
-        run: yarn workspace @parent/core run generate1
+        run: yarn workspace @parent/core run generate
 
       - name: Check Status2
         run: | 
