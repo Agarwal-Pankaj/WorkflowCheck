@@ -11,5 +11,8 @@
   "scripts": {
     "build": "yarn run -T tsc -b",
     "generate": "ts-node ./script/generate.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
