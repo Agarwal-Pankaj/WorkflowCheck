@@ -40,7 +40,7 @@ jobs:
               echo "$status"
               exit 1
             else
-              echo "Cconfig files are up to date."
+              echo "Config files are up to date."
               exit 0
             fi
           fi
