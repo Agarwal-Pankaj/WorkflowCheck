@@ -1,7 +1,6 @@
 #!/bin/sh
 
-
-node ./parent/core/script/generate.ts
+yarn workspace @parent/core run generate
 
 if [ $? -eq 1 ]; then
     exit 1
