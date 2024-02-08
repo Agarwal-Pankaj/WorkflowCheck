@@ -3069,6 +3069,7 @@ __metadata:
     prettier: "npm:^3.0.3"
     semver: "npm:^7.5.2"
     ts-json-schema-generator: "npm:1.0.0"
+    ts-node: "npm:^10.9.1"
     typescript: "npm:5.1.6"
     webpack: "npm:^5.90.1"
     webpack-cli: "npm:^5.1.4"
