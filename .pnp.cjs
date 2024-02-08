@@ -19,7 +19,7 @@ const RAW_RUNTIME_STATE =
     }\
   ],\
   "enableTopLevelFallback": true,\
-  "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
+  "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:e2e(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:github-apps\\\\/cloud-build-on-prs\\\\/cloud-functions\\\\/cloudbuild-update(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:github-apps\\\\/cloud-build-on-prs\\\\/cloud-functions\\\\/github-pr-update(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:ci\\\\/buildr)$)|(^(?:ci\\\\/stackhawk)$)",\
   "fallbackExclusionList": [\
     ["@parent/core", ["workspace:parent/core"]],\
     ["pankaj", ["workspace:."]]\
@@ -980,6 +980,19 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/acorn-walk-npm-8.3.2-df039a42bf-57dbe2fd8c.zip/node_modules/acorn-walk/",\
         "packageDependencies": [\
           ["acorn-walk", "npm:8.3.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:1082ed6cbc87161e6c9b0136c734a9e8e5816dc1b9f7d6d6ce5deccdac644436f55a6550b4524e5f1c41cb8a15db037144b18bf211036c7d429f6f42090d6b0d#npm:8.3.2", {\
+        "packageLocation": "./.yarn/__virtual__/acorn-walk-virtual-635a162df3/0/cache/acorn-walk-npm-8.3.2-df039a42bf-57dbe2fd8c.zip/node_modules/acorn-walk/",\
+        "packageDependencies": [\
+          ["acorn-walk", "virtual:1082ed6cbc87161e6c9b0136c734a9e8e5816dc1b9f7d6d6ce5deccdac644436f55a6550b4524e5f1c41cb8a15db037144b18bf211036c7d429f6f42090d6b0d#npm:8.3.2"],\
+          ["@types/acorn", null],\
+          ["acorn", "npm:8.11.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/acorn",\
+          "acorn"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4695,7 +4708,7 @@ const RAW_RUNTIME_STATE =
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
           ["acorn", "npm:8.11.3"],\
-          ["acorn-walk", "npm:8.3.2"],\
+          ["acorn-walk", "virtual:1082ed6cbc87161e6c9b0136c734a9e8e5816dc1b9f7d6d6ce5deccdac644436f55a6550b4524e5f1c41cb8a15db037144b18bf211036c7d429f6f42090d6b0d#npm:8.3.2"],\
           ["arg", "npm:4.1.3"],\
           ["create-require", "npm:1.1.1"],\
           ["diff", "npm:4.0.2"],\
@@ -4731,7 +4744,7 @@ const RAW_RUNTIME_STATE =
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
           ["acorn", "npm:8.11.3"],\
-          ["acorn-walk", "npm:8.3.2"],\
+          ["acorn-walk", "virtual:1082ed6cbc87161e6c9b0136c734a9e8e5816dc1b9f7d6d6ce5deccdac644436f55a6550b4524e5f1c41cb8a15db037144b18bf211036c7d429f6f42090d6b0d#npm:8.3.2"],\
           ["arg", "npm:4.1.3"],\
           ["create-require", "npm:1.1.1"],\
           ["diff", "npm:4.0.2"],\
