@@ -27,11 +27,13 @@ jobs:
 
 
       - name: Generate and check  configs
-        run: yarn workspace @parent/core run generate
+        run: yarn workspace @parent/core run generate1
 
       - name: Check Status2
-        run: |
+        run: | 
+          echo('Checking files')
           if [ $? -eq 1 ]; then
+          echo "Error occured in generating files."
             exit 1
           else
             status=$(git status --porcelain)
