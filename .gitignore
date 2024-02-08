@@ -25,7 +25,7 @@ yarn-error.log
 # Allow test fixtures lock files for upgradr
 !tools/upgradr/**/yarn.lock
 
-.yarn/cache
+
 
 node_modules/
 
