@@ -26,12 +26,8 @@ jobs:
           node-version: 18.17.1
 
 
-      - name: Generate and check computed configs
-        run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh
-
-
       - name: Generate and check  configs
-        run: yarn workspace @WorkflowCheck/ok run generate
+        run: yarn workspace @parent/core run generate
 
       - name: Check Status
         run: |

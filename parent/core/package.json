@@ -1,5 +1,5 @@
 {
-  "name": "@WorkflowCheck/ok",
+  "name": "@parent/core",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:Agarwal-Pankaj/WorkflowCheck.git",
@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "yarn run -T tsc -b",
-    "generate-configs": "ts-node ./script/generate.ts"
+    "generate": "ts-node ./script/generate.ts"
   }
 }

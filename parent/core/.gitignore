@@ -16,7 +16,7 @@ package-lock.json
 .idea/*
 !.idea/runConfigurations/
 !.idea/watcherTasks.xml
-
+.yarn/cache
 **/*.js.map
 
 # Typescript build cache
