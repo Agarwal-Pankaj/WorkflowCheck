@@ -5,6 +5,7 @@
     "parent/*"
   ],
   "scripts": {
+    "start": "run-s build ",
     "build": "yarn run -T tsc -b"
   },
   "dependencies": {
