@@ -6,6 +6,7 @@
   "author": "Pankaj Agarwal <a.pankaj@1982@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@pankaj/flag": "workspace:*",
     "@types/node": "^20.11.16"
   },
   "scripts": {
