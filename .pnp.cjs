@@ -300,8 +300,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@pankaj/core", "workspace:packages/core"],\
           ["@pankaj/flag", "workspace:shared/flag"],\
-          ["@types/node", "npm:20.11.17"],\
-          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"]\
+          ["@types/node", "npm:20.11.17"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -4731,42 +4730,6 @@ const RAW_RUNTIME_STATE =
           ["diff", "npm:4.0.2"],\
           ["make-error", "npm:1.3.6"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=f3b441"],\
-          ["v8-compile-cache-lib", "npm:3.0.1"],\
-          ["yn", "npm:3.1.1"]\
-        ],\
-        "packagePeers": [\
-          "@swc/core",\
-          "@swc/wasm",\
-          "@types/node",\
-          "@types/swc__core",\
-          "@types/swc__wasm",\
-          "@types/typescript",\
-          "typescript"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2", {\
-        "packageLocation": "./.yarn/__virtual__/ts-node-virtual-e9562d8be4/0/cache/ts-node-npm-10.9.2-3f3890b9ac-a91a15b3c9.zip/node_modules/ts-node/",\
-        "packageDependencies": [\
-          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"],\
-          ["@cspotcode/source-map-support", "npm:0.8.1"],\
-          ["@swc/core", null],\
-          ["@swc/wasm", null],\
-          ["@tsconfig/node10", "npm:1.0.9"],\
-          ["@tsconfig/node12", "npm:1.0.11"],\
-          ["@tsconfig/node14", "npm:1.0.3"],\
-          ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:20.11.17"],\
-          ["@types/swc__core", null],\
-          ["@types/swc__wasm", null],\
-          ["@types/typescript", null],\
-          ["acorn", "npm:8.11.3"],\
-          ["acorn-walk", "virtual:1082ed6cbc87161e6c9b0136c734a9e8e5816dc1b9f7d6d6ce5deccdac644436f55a6550b4524e5f1c41cb8a15db037144b18bf211036c7d429f6f42090d6b0d#npm:8.3.2"],\
-          ["arg", "npm:4.1.3"],\
-          ["create-require", "npm:1.1.1"],\
-          ["diff", "npm:4.0.2"],\
-          ["make-error", "npm:1.3.6"],\
-          ["typescript", null],\
           ["v8-compile-cache-lib", "npm:3.0.1"],\
           ["yn", "npm:3.1.1"]\
         ],\

@@ -6,5 +6,6 @@
     "declarationMap": true,
     "resolveJsonModule": true,
     "paths": {}
-  }
+  },
+  "composite": true,
 }

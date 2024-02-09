@@ -11,14 +11,10 @@
     "generate": "node ./script/generate.ts"
   },
   "dependencies": {
-    "@pankaj/flag": "workspace:*",
-    "ts-node": "^10.9.1"
+    "@pankaj/flag": "workspace:*"
   },
   "devDependencies": {
     "@pankaj/flag": "workspace:*",
     "@types/node": "^20.11.17"
-  },
-  "peerDependencies": {
-    "@pankaj/flag": "workspace:*"
   }
 }

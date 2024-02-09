@@ -6,5 +6,8 @@
     "declarationMap": true,
     "resolveJsonModule": true,
     "paths": {}
-  }
+  },
+  "references": [
+    { "path": "../../shared/flag" },
+  ]
 }
