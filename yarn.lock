@@ -200,6 +200,8 @@ __metadata:
     "@pankaj/flag": "workspace:*"
     "@types/node": "npm:^20.11.16"
     ts-node: "npm:^10.9.1"
+  peerDependencies:
+    "@pankaj/flag": "workspace:*"
   languageName: unknown
   linkType: soft
 

@@ -18,5 +18,8 @@
     "@pankaj/flag": "workspace:*",
     "@types/node": "18.17.1",
     "ts-node": "^10.9.1"
+  },
+  "peerDependencies": {
+    "@pankaj/flag": "workspace:*"
   }
 }
