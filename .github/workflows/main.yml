@@ -32,8 +32,6 @@ jobs:
       - name: Yarn
         run: yarn install
       
-      - name: tsc
-        run: npm i typescript
 
       # - name: Install
       #   run: yarn workspaces foreach -A run build
