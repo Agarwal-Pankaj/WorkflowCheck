@@ -4,3 +4,5 @@ export const feature1 = {
 export const featureFlagsConfigSchema = {
     abc: 'string'
 }
+
+export default featureFlagsConfigSchema;

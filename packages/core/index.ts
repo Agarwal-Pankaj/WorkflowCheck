@@ -1,5 +1,5 @@
-import a from "@pankaj/flag";
+import { featureFlagsConfigSchema } from "@pankaj/flag";
 export const feature2 = {
     abc: 'feature2',
-    temp: a,
+    temp: featureFlagsConfigSchema,
 }

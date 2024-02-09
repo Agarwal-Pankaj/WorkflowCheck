@@ -1,7 +1,7 @@
 //import fs from 'fs';
-import a from "@pankaj/flag";
+const { featureFlagsConfigSchema } = require('@shared/flag');
 // fs.writeFileSync('Sample.json5', 'two');
 console.log('asdsadasdasdasdasdas')
 console.log('121212')
-console.log(a)
+console.log(featureFlagsConfigSchema)
 // process.exit(1);
