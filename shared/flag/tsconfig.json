@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "resolveJsonModule": true,
-    "paths": {}
-  },
-  "composite": true,
+    "paths": {},
+    "composite": true,
+  }
 }
