@@ -11,7 +11,7 @@
   "scripts": {
     "start": "run-s build ",
     "build": "yarn run -T tsc -b",
-    "generate": "ts-node ./script/generate.ts"
+    "generate": "node ./script/generate.ts"
   },
   "dependencies": {
     "@pankaj/flag": "workspace:*",
