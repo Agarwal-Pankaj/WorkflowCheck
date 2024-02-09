@@ -1,4 +1,7 @@
 {
   "name": "@pankaj/flag",
-  "packageManager": "yarn@4.0.0-rc.50"
+  "packageManager": "yarn@4.0.0-rc.50",
+  "devDependencies": {
+    "@types/node": "^20.11.17"
+  }
 }
