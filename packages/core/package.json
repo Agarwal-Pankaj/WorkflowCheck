@@ -1,5 +1,5 @@
 {
-  "name": "@parent/core",
+  "name": "@pankaj/core",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:Agarwal-Pankaj/WorkflowCheck.git",
@@ -14,6 +14,8 @@
     "generate": "ts-node ./script/generate.ts"
   },
   "dependencies": {
+    "@pankaj/flag": "workspace:*",
+    "@types/node": "18.17.1",
     "ts-node": "^10.9.1"
   }
 }

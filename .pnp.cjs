@@ -14,14 +14,19 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
-      "name": "@parent/core",\
-      "reference": "workspace:parent/core"\
+      "name": "@pankaj/core",\
+      "reference": "workspace:packages/core"\
+    },\
+    {\
+      "name": "@pankaj/flag",\
+      "reference": "workspace:shared/flag"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:e2e(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:github-apps\\\\/cloud-build-on-prs\\\\/cloud-functions\\\\/cloudbuild-update(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:github-apps\\\\/cloud-build-on-prs\\\\/cloud-functions\\\\/github-pr-update(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)|(^(?:ci\\\\/buildr)$)|(^(?:ci\\\\/stackhawk)$)",\
   "fallbackExclusionList": [\
-    ["@parent/core", ["workspace:parent/core"]],\
+    ["@pankaj/core", ["workspace:packages/core"]],\
+    ["@pankaj/flag", ["workspace:shared/flag"]],\
     ["pankaj", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -289,13 +294,23 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@parent/core", [\
-      ["workspace:parent/core", {\
-        "packageLocation": "./parent/core/",\
+    ["@pankaj/core", [\
+      ["workspace:packages/core", {\
+        "packageLocation": "./packages/core/",\
         "packageDependencies": [\
-          ["@parent/core", "workspace:parent/core"],\
-          ["@types/node", "npm:20.11.16"],\
-          ["ts-node", "virtual:f271096fe06fe9d4c581c2350b5a5dddd4f3a0ec454f8d31b13aca635a5b19555bd3e0c2c1bf306a6d927fd31ce541f018b70ea52c720dac74aba167ff46aa61#npm:10.9.2"]\
+          ["@pankaj/core", "workspace:packages/core"],\
+          ["@pankaj/flag", "workspace:shared/flag"],\
+          ["@types/node", "npm:20.11.17"],\
+          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@pankaj/flag", [\
+      ["workspace:shared/flag", {\
+        "packageLocation": "./shared/flag/",\
+        "packageDependencies": [\
+          ["@pankaj/flag", "workspace:shared/flag"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -415,6 +430,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-20.11.16-d9bc65d4bc-751f50ec5c.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.11.16"],\
+          ["undici-types", "npm:5.26.5"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.11.17", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.11.17-5185bfb3de-3342df8725.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.11.17"],\
           ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
@@ -4728,10 +4751,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:f271096fe06fe9d4c581c2350b5a5dddd4f3a0ec454f8d31b13aca635a5b19555bd3e0c2c1bf306a6d927fd31ce541f018b70ea52c720dac74aba167ff46aa61#npm:10.9.2", {\
-        "packageLocation": "./.yarn/__virtual__/ts-node-virtual-85f92d0a22/0/cache/ts-node-npm-10.9.2-3f3890b9ac-a91a15b3c9.zip/node_modules/ts-node/",\
+      ["virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2", {\
+        "packageLocation": "./.yarn/__virtual__/ts-node-virtual-e9562d8be4/0/cache/ts-node-npm-10.9.2-3f3890b9ac-a91a15b3c9.zip/node_modules/ts-node/",\
         "packageDependencies": [\
-          ["ts-node", "virtual:f271096fe06fe9d4c581c2350b5a5dddd4f3a0ec454f8d31b13aca635a5b19555bd3e0c2c1bf306a6d927fd31ce541f018b70ea52c720dac74aba167ff46aa61#npm:10.9.2"],\
+          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"],\
           ["@cspotcode/source-map-support", "npm:0.8.1"],\
           ["@swc/core", null],\
           ["@swc/wasm", null],\
@@ -4739,7 +4762,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.11"],\
           ["@tsconfig/node14", "npm:1.0.3"],\
           ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:20.11.16"],\
+          ["@types/node", "npm:20.11.17"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\

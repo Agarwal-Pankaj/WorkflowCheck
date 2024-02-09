@@ -26,26 +26,26 @@ jobs:
           node-version: 18.17.1
 
 
-      # - name: Generate and check  configs
-      #   run: yarn workspace @parent/core run generate
+      # - name: Generate and check computed configs
+      #   run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh  
 
-      - name: Generate and check computed configs
-        run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh  
-        
-      # - name: Check Status2
-      #   run: | 
-      #     echo "Checking files"
-      #     if [ $? -eq 1 ]; then
-      #     echo "Error occured in generating files."
-      #       exit 1
-      #     else
-      #       status=$(git status --porcelain)
-      #       if [ -n "$status" ]; then
-      #         echo "Following config files have mismatched changes in PR. Please generate"
-      #         echo "$status"
-      #         exit 1
-      #       else
-      #         echo "Config files are up to date."
-      #         exit 0
-      #       fi
-      #     fi
+      - name: Generate and check  configs
+        run: yarn workspace @pankaj/core run generate
+
+      - name: Check Status2
+        run: | 
+          echo "Checking files"
+          if [ $? -eq 1 ]; then
+          echo "Error occured in generating files."
+            exit 1
+          else
+            status=$(git status --porcelain)
+            if [ -n "$status" ]; then
+              echo "Following config files have mismatched changes in PR. Please generate"
+              echo "$status"
+              exit 1
+            else
+              echo "Config files are up to date."
+              exit 0
+            fi
+          fi

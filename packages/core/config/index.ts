@@ -1,0 +1,1 @@
+const { featureFlagsConfigSchema } = require('@shared/flag');
