@@ -29,6 +29,9 @@ jobs:
       # - name: Generate and check computed configs
       #   run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh  
 
+      - name: Yarn
+        run: yarn install
+
       - name: Generate and check  configs
         run: yarn workspace @pankaj/core run generate
 
