@@ -5,10 +5,6 @@
   "repository": "git@github.com:Agarwal-Pankaj/WorkflowCheck.git",
   "author": "Pankaj Agarwal <a.pankaj@1982@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@pankaj/flag": "workspace:*",
-    "@types/node": "^20.11.16"
-  },
   "scripts": {
     "start": "run-s build ",
     "build": "yarn run -T tsc -b",
@@ -16,8 +12,11 @@
   },
   "dependencies": {
     "@pankaj/flag": "workspace:*",
-    "@types/node": "18.17.1",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@pankaj/flag": "workspace:*",
+    "@types/node": "^20.11.17"
   },
   "peerDependencies": {
     "@pankaj/flag": "workspace:*"

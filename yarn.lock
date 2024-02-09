@@ -198,7 +198,7 @@ __metadata:
   resolution: "@pankaj/core@workspace:packages/core"
   dependencies:
     "@pankaj/flag": "workspace:*"
-    "@types/node": "npm:^20.11.16"
+    "@types/node": "npm:^20.11.17"
     ts-node: "npm:^10.9.1"
   peerDependencies:
     "@pankaj/flag": "workspace:*"
@@ -310,7 +310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.11.16":
+"@types/node@npm:^20.11.17":
   version: 20.11.17
   resolution: "@types/node@npm:20.11.17"
   dependencies:
