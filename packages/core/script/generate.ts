@@ -1,4 +1,5 @@
 //import fs from 'fs';
+import '@pankaj/flag'
 const { featureFlagsConfigSchema } = require('@pankaj/flag');
 // fs.writeFileSync('Sample.json5', 'two');
 console.log('asdsadasdasdasdasdas')
