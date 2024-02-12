@@ -180,7 +180,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/node-pre-gyp@npm:^1.0.10":
+"@mapbox/node-pre-gyp@npm:^1.0.11":
   version: 1.0.11
   resolution: "@mapbox/node-pre-gyp@npm:1.0.11"
   dependencies:
@@ -254,7 +254,7 @@ __metadata:
   dependencies:
     "@pankaj/flag": "workspace:*"
     "@types/node": "npm:^20.11.17"
-    libxmljs2: "npm:^0.32.0"
+    libxmljs2: "npm:^0.33.0"
     ts-node: "npm:^10.9.1"
   languageName: unknown
   linkType: soft
@@ -3043,14 +3043,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"libxmljs2@npm:^0.32.0":
-  version: 0.32.0
-  resolution: "libxmljs2@npm:0.32.0"
+"libxmljs2@npm:^0.33.0":
+  version: 0.33.0
+  resolution: "libxmljs2@npm:0.33.0"
   dependencies:
-    "@mapbox/node-pre-gyp": "npm:^1.0.10"
+    "@mapbox/node-pre-gyp": "npm:^1.0.11"
     bindings: "npm:~1.5.0"
-    nan: "npm:~2.17.0"
-  checksum: 7e6560dbce2137c3d103ab528253e29a05917a3f6a545d9e6adf588d09d4fca7c0bf363abbaf48d52d9ebf964b92adea81cdbf66d60dacf478dce7c74f157dd3
+    nan: "npm:~2.18.0"
+  checksum: e9550e861a111e876801e7823b21e59c29c3e461b6ccf6843cfe8a4f24caf23cbcea9191f7904b80fcad260ea2fbf84b73ea9febd4635756559e2643294c065a
   languageName: node
   linkType: hard
 
@@ -3400,12 +3400,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:~2.17.0":
-  version: 2.17.0
-  resolution: "nan@npm:2.17.0"
+"nan@npm:~2.18.0":
+  version: 2.18.0
+  resolution: "nan@npm:2.18.0"
   dependencies:
     node-gyp: "npm:latest"
-  checksum: bba1efee2475afb0cce154300b554863fb4bb0a683a28f5d0fa7390794b3b4381356aabeab6472c70651d9c8a2830e7595963f3ec0aa2008e5c4d83dbeb820fa
+  checksum: 5520e22c64e2b5b495b1d765d6334c989b848bbe1502fec89c5857cabcc7f9f0474563377259e7574bff1c8a041d3b90e9ffa1f5e15502ffddee7b2550cc26a0
   languageName: node
   linkType: hard
 

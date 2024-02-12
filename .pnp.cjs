@@ -367,7 +367,7 @@ const RAW_RUNTIME_STATE =
           ["@pankaj/core", "workspace:packages/core"],\
           ["@pankaj/flag", "workspace:shared/flag"],\
           ["@types/node", "npm:20.11.17"],\
-          ["libxmljs2", "npm:0.32.0"],\
+          ["libxmljs2", "npm:0.33.0"],\
           ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"]\
         ],\
         "linkType": "SOFT"\
@@ -3834,13 +3834,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["libxmljs2", [\
-      ["npm:0.32.0", {\
-        "packageLocation": "./.yarn/unplugged/libxmljs2-npm-0.32.0-2a13549ddb/node_modules/libxmljs2/",\
+      ["npm:0.33.0", {\
+        "packageLocation": "./.yarn/unplugged/libxmljs2-npm-0.33.0-e62daccd28/node_modules/libxmljs2/",\
         "packageDependencies": [\
-          ["libxmljs2", "npm:0.32.0"],\
+          ["libxmljs2", "npm:0.33.0"],\
           ["@mapbox/node-pre-gyp", "npm:1.0.11"],\
           ["bindings", "npm:1.5.0"],\
-          ["nan", "npm:2.17.0"]\
+          ["nan", "npm:2.18.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4231,10 +4231,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nan", [\
-      ["npm:2.17.0", {\
-        "packageLocation": "./.yarn/unplugged/nan-npm-2.17.0-bf36a21d6f/node_modules/nan/",\
+      ["npm:2.18.0", {\
+        "packageLocation": "./.yarn/unplugged/nan-npm-2.18.0-a51ed5bed5/node_modules/nan/",\
         "packageDependencies": [\
-          ["nan", "npm:2.17.0"],\
+          ["nan", "npm:2.18.0"],\
           ["node-gyp", "npm:10.0.1"]\
         ],\
         "linkType": "HARD"\
