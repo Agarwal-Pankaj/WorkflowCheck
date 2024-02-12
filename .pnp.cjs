@@ -368,7 +368,8 @@ const RAW_RUNTIME_STATE =
           ["@pankaj/flag", "workspace:shared/flag"],\
           ["@types/node", "npm:20.11.17"],\
           ["libxmljs2", "npm:0.33.0"],\
-          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"]\
+          ["ts-node", "virtual:afefd527ddd706d507a80f4b0983cd992149d52e93d7064a78cd4b261e2c39a24930a6152ffa46168824bc6fb8d71176a4ff33208bc3f1b824ae2538d411ce73#npm:10.9.2"],\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -5646,7 +5647,7 @@ const RAW_RUNTIME_STATE =
           ["create-require", "npm:1.1.1"],\
           ["diff", "npm:4.0.2"],\
           ["make-error", "npm:1.3.6"],\
-          ["typescript", null],\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
           ["v8-compile-cache-lib", "npm:3.0.1"],\
           ["yn", "npm:3.1.1"]\
         ],\
@@ -5766,6 +5767,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/typescript-patch-2e900486ed-e237c7cc9b.zip/node_modules/typescript/",\
         "packageDependencies": [\
           ["typescript", "patch:typescript@npm%3A4.6.4#optional!builtin<compat/typescript>::version=4.6.4&hash=5d3a66"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071", {\
+        "packageLocation": "./.yarn/cache/typescript-patch-97a611e52a-f5481fa3ba.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "HARD"\
       }],\

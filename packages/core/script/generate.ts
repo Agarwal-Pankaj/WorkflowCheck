@@ -9,5 +9,5 @@ import libxml from 'libxmljs2';
 console.log('asdsadasdasdasdasdas');
 console.log('121212');
 console.log(featureFlagsConfigSchema.abc);
-libxml.parseXml('<xml>');
+libxml.parseXml('<?xml version="1.0" encoding="UTF-8"?><root></root>');
 // process.exit(1);
