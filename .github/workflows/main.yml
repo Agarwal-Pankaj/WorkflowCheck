@@ -35,8 +35,8 @@ jobs:
       # - name: Install
       #   run: yarn workspaces foreach -A run build
 
-      - name: Install
-        run: yarn workspaces @shared/flag build
+      - name: Build
+        run: yarn workspace @pankaj/flag build
 
       - name: Generate and check  configs
         run: yarn workspace @pankaj/core run generate
