@@ -3,9 +3,6 @@
 //import '@pankaj/flag'
 
 import featureFlagsConfigSchema from './middle';
-// const { featureFlagsConfigSchema } = require('@pankaj/flag');
-
-//import featureFlagsConfigSchema from '@pankaj/flag'
 
 // fs.writeFileSync('Sample.json5', 'two');
 console.log('asdsadasdasdasdasdas');
