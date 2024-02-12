@@ -199,6 +199,7 @@ __metadata:
   dependencies:
     "@pankaj/flag": "workspace:*"
     "@types/node": "npm:^20.11.17"
+    ts-node: "npm:^10.9.1"
   languageName: unknown
   linkType: soft
 

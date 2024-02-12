@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "outDir": "./dist",
-    "declaration": true,
-    "declarationMap": true,
-    "resolveJsonModule": true,
-    "paths": {},
-    "composite": true,
-  }
+    "rootDir": "./src",
+  
+  },
+  "include": ["src/index.ts"]
 }
+

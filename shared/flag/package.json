@@ -1,12 +1,13 @@
 {
   "name": "@pankaj/flag",
   "packageManager": "yarn@4.0.0-rc.50",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "devDependencies": {
     "@types/node": "^20.11.17"
   },
   "scripts": {
-    "start": "run-s build ",
-    "build": "yarn run -T tsc -b"
+    "clean": "rm -rf dist",
+    "build": "yarn run -T tsc"
   }
 }
