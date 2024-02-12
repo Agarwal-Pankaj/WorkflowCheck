@@ -3,7 +3,7 @@
 //import '@pankaj/flag'
 
 import featureFlagsConfigSchema from './middle';
-import libxml from 'libxmljs2';
+import { libxml } from 'libxmljs2';
 
 // fs.writeFileSync('Sample.json5', 'two');
 console.log('asdsadasdasdasdasdas');
