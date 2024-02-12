@@ -36,7 +36,7 @@ jobs:
       #   run: yarn workspaces foreach -A run build
 
       - name: Install
-        uses: yarn
+        run: yarn
 
       - name: Build
         run: yarn workspace @pankaj/flag build
