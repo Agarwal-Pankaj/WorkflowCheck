@@ -1,0 +1,21 @@
+{
+  "name": "@pankaj/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pankaj Agarwal <a.pankaj@1982@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "run-s build ",
+    "build": "yarn run -T tsc -b",
+    "generate": "ts-node ./script/generate.ts"
+  },
+  "dependencies": {
+    "@pankaj/flag": "workspace:*",
+    "libxmljs2": "^0.33.0",
+    "ts-node": "^10.9.1",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17"
+  }
+}

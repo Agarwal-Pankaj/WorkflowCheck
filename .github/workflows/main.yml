@@ -26,12 +26,29 @@ jobs:
           node-version: 18.17.1
 
 
-      - name: Generate and check  configs
-        run: yarn workspace @parent/core run generate
+      # - name: Generate and check computed configs
+      #   run: $GITHUB_WORKSPACE/parent/core/bin/generate.sh  
 
-      - name: Check Status
-        run: |
+      # - name: Yarn
+      #   run: yarn install
+      
+      # - name: Install
+      #   run: yarn workspaces foreach -A run build
+
+      - name: Install
+        run: yarn
+
+      - name: Build
+        run: yarn workspace @pankaj/flag build
+
+      - name: Generate and check  configs
+        run: yarn workspace @pankaj/core run generate
+
+      - name: Check Status2
+        run: | 
+          echo "Checking files"
           if [ $? -eq 1 ]; then
+          echo "Error occured in generating files."
             exit 1
           else
             status=$(git status --porcelain)
@@ -40,7 +57,7 @@ jobs:
               echo "$status"
               exit 1
             else
-              echo "Cconfig files are up to date."
+              echo "Config files are up to date."
               exit 0
             fi
           fi

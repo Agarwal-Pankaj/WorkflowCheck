@@ -1,0 +1,25 @@
+# Build
+build/
+dist/
+# for testing purpose, do not commit .bak folders. This was used when migrating from webpack 4 to webpack 5
+*.bak/
+
+# System Files
+*.orig
+.DS_Store
+Thumbs.db
+
+node_modules/
+
+package-lock.json
+!e2e/yarn.lock
+.idea/*
+!.idea/runConfigurations/
+!.idea/watcherTasks.xml
+.yarn/cache
+**/*.js.map
+
+# Typescript build cache
+tsconfig.tsbuildinfo
+
+
